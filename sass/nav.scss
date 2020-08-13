@@ -1,0 +1,60 @@
+.page--wrapper{
+  margin: 0;
+  padding: 0;
+}
+.nav--wrapper {
+  height: 80px;
+  width: 100%;
+  clear: both;
+  display: table;
+  content: "";
+  background: #EB1B1B;
+}
+
+
+.logo--wrapper {
+  width: 40%;
+  height: 80px;
+  float: left;
+  .home--img--link {
+    .logo--img {
+      height: 40px;
+      margin: 20px;
+    }
+  }
+}
+
+.nav--list--wrapper {
+  width:55%;
+  height: 80px;
+  float: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  .nav--link {
+    display: inline-block;
+    margin: 0 5%;
+    line-height: 80px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+    }
+  }
+}
+
+.cart--wrapper {
+  width: 5%;
+  height: auto;
+  float: right;
+  .cart--link {
+    display: inline-block;
+    .cart--img {
+      height: 30px;
+      margin: 20px 0;
+    }
+  }
+}
