@@ -7,8 +7,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins,sans-serif;
-
 }
+
+// home page styling - home image ////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 
 .home--img--wrapper {
   .home--img {
@@ -19,6 +21,36 @@
   }
 }
 
+// home page styling - CTA button ////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+.cta--btn {
+  padding: 10px 30px;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  background: none;
+  letter-spacing: 5px;
+  font-weight: 300;
+  background: none;
+  color: #fff;
+  border: 4px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  border-radius: 25px;
+}
+
+.cta--btn:hover {
+  color: $pri-color;
+  border: 4px solid $pri-color;
+  transition: .6s;
+}
+
+// home page styling - about-welcome message//////////////////////////
+//////////////////////////////////////////////////////////////////////
+
 .welcoming--wrapper {
   background-color: #fff;
   position: absolute;
@@ -28,32 +60,4 @@
 
     }
   }
-}
-
-.cta--btn--wrapper {
-  height:100%;
-  .cta--btn--link{
-    margin: auto;
-    .cta--btn{
-      font-size: 65px;
-      text-align: center;
-      text-transform: uppercase;
-      background: none;
-      letter-spacing: 5px;
-      font-weight: 400;
-      border:none;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
-.cta--btn:hover {
-  background-color: #EB1B1B;
-}
-
-.welcome--msg {
 }

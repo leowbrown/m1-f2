@@ -1,33 +1,47 @@
 @import 'mixin';
+@import 'colors';
+
+// nav styling - wrapper /////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 
 .nav--wrapper {
-  @include size(100%, 80px, auto);
+  @include size(100%, 120px, auto);
   clear: both;
   display: table;
   content: "";
   background: #EB1B1B;
 }
 
+// nav styling - logo /////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
 
 .logo--wrapper {
-  @include col(30%, 80px, left);
+  @include col(25%, 120px, left);
   .home--img--link {
     .logo--img {
-      @include size (auto, 40px, 20px);
+      @include size (auto, 100px, 15px);
     }
   }
 }
 
+.logo--img:hover{
+  opacity: 80%;
+}
+
+// nav styling - pages /////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
 .nav--list--wrapper {
-  @include col(65%, 80px, left);
+  @include col(65%, 120px, left);
   text-transform: uppercase;
   font-weight: 500;
   text-align: right;
-  font-size: 20px;
+  font-size: 22px;
   .nav--link {
     display: inline-block;
-    height: 80px;
-    line-height: 80px;
+    height: 120px;
+    line-height: 120px;
     a {
       text-decoration: none;
       color: #fff;
@@ -39,16 +53,21 @@
 .nav--link a:hover{
     transition: .6s;
     background-color: #fff;
-    color: #EB1B1B;
-    padding: 30px 30px;
+    color: $pri-color;
+    padding: 49px 30px;
     margin: 0 20px;
 }
 
+// nav styling - cart /////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
 .cart--wrapper {
-  @include col(5%, 80px, right);
+  @include col(10%, 120px, right);
   .cart--link {
     .cart--img {
-      @include size(30px, auto, 20px 0);
+      @include size(35px, auto, 38px auto 25px 0);
+      position: absolute;
+      right: 50px;
     }
   }
 }
