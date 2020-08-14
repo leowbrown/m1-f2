@@ -1,0 +1,12 @@
+@mixin col($w, $h, $f) {
+  width: $w;
+  height: $h;
+  float: $f;
+
+}
+
+@mixin size($w, $h, $m) {
+  width: $w;
+  height: $h;
+  margin: $m;
+}

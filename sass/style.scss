@@ -1,19 +1,16 @@
 @import 'nav';
-
-@mixin sizing($w, $h){
-  width: $w;
-  height: $h;
-}
+@import 'mixin';
+@import 'colors';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins,sans-serif;
+
 }
 
 .home--img--wrapper {
-  height: 60%;
   .home--img {
     width: 100%;
     height: auto;
@@ -25,10 +22,38 @@
 .welcoming--wrapper {
   background-color: #fff;
   position: absolute;
-  bottom: 0;
+  bottom: -300px;
   .welcome--header {
     .welcome--msg {
 
     }
   }
+}
+
+.cta--btn--wrapper {
+  height:100%;
+  .cta--btn--link{
+    margin: auto;
+    .cta--btn{
+      font-size: 65px;
+      text-align: center;
+      text-transform: uppercase;
+      background: none;
+      letter-spacing: 5px;
+      font-weight: 400;
+      border:none;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.cta--btn:hover {
+  background-color: #EB1B1B;
+}
+
+.welcome--msg {
 }
