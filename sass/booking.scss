@@ -1,0 +1,82 @@
+@import 'mixin';
+@import 'colors';
+
+* {
+  border: none;
+  opacity: 100%;
+}
+
+.booking--img--wrapper {
+  .booking--img {
+    @include img(100%, auto, absolute, -1 );
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+.booking--form--wrapper {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+
+
+}
+
+  .booking--header {
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    @include col(100%, auto, left);
+}
+.form--pri {
+  width:97%;
+  margin: 1%;
+  padding: 1%;
+  float: left;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+}
+
+.form--sec {
+  width: 31%;
+  padding:1%;
+  margin: 1%;
+  float: left;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+
+}
+
+.submit {
+  width: 31%;
+  padding:1%;
+  margin: 1%;
+  float: left;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+
+}
+
+.submit:hover {
+  transition: .1s;
+  border: 1px solid $pri-color;
+  background: $pri-color;
+  border-radius: 3px;
+}

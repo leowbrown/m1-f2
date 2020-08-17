@@ -10,3 +10,10 @@
   height: $h;
   margin: $m;
 }
+
+@mixin img($w, $h, $p, $z) {
+  width: $w;
+  height: $h;
+  position: $p;
+  z-index: $z;
+}
