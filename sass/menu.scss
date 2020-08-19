@@ -1,0 +1,39 @@
+@import 'mixin';
+
+
+
+.menu--page {
+  @include w-h(85%, auto);
+  margin:1rem 0 0 12.5%;
+
+
+  .menu--row {
+    @include w-h(100%, 33%);
+    list-style: none;
+    .list--container {
+      @include col(20%, 100%, left);
+      margin: 20px;
+      list-style: none;
+      .list--header {
+        color: $pri-color;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: .1rem;
+      }
+    }
+  }
+}
+
+.list {
+  text-transform: capitalize;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  letter-spacing: .5px;
+}
+
+.menu--row::after{
+  @include reset(both, table);
+  content: "";
+}

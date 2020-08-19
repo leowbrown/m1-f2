@@ -26,7 +26,8 @@
   color: #fff;
   border: 2px solid #EB1B1B;
   background: #EB1B1B;
-  transition: .6s; }
+  transition: .6s;
+  cursor: pointer; }
 
 .cta--btn:active {
   color: #fff;
@@ -106,7 +107,8 @@
   transition: .1s;
   border: 1px solid #EB1B1B;
   background: #EB1B1B;
-  border-radius: 3px; }
+  border-radius: 3px;
+  cursor: pointer; }
 
 .nav--wrapper {
   width: 100%;
@@ -152,7 +154,8 @@
   background-color: #fff;
   color: #EB1B1B;
   padding: 0px 30px;
-  margin: 0 20px; }
+  margin: 0 20px;
+  cursor: pointer; }
 
 .cart--wrapper {
   width: 10%;
@@ -209,7 +212,8 @@
   background-color: #fff;
   color: #EB1B1B;
   padding: 0px 30px;
-  margin: 0 20px; }
+  margin: 0 20px;
+  cursor: pointer; }
 
 .cart--wrapper {
   width: 10%;
@@ -280,6 +284,39 @@
   .contact--location:hover .contact--location:visited {
     color: #fff;
     transition: 0.3s; }
+
+.menu--page {
+  width: 85%;
+  height: auto;
+  margin: 1rem 0 0 12.5%; }
+  .menu--page .menu--row {
+    width: 100%;
+    height: 33%;
+    list-style: none; }
+    .menu--page .menu--row .list--container {
+      width: 20%;
+      height: 100%;
+      float: left;
+      margin: 20px;
+      list-style: none; }
+      .menu--page .menu--row .list--container .list--header {
+        color: #EB1B1B;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: .1rem; }
+
+.list {
+  text-transform: capitalize;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  letter-spacing: .5px; }
+
+.menu--row::after {
+  clear: both;
+  display: table;
+  content: ""; }
 
 * {
   margin: 0;
