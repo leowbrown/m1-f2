@@ -39,6 +39,13 @@
   transition: .6s;
 }
 
+.cta--btn:active {
+  color: #fff;
+  border: 2px solid $pri-color;
+  background: $pri-color;
+  transition: .6s;
+}
+
 // home page styling - about-welcome message//////////////////////////
 //////////////////////////////////////////////////////////////////////
 

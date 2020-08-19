@@ -1,2 +1,64 @@
 @import 'mixin';
 @import 'colors';
+@import 'nav';
+
+.contact--img--wrapper {
+  .contact--img {
+    @include img(100%, auto, absolute, -1 );
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+.contact--container {
+  @include w-h(25%, 16rem);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .contact--header {
+    width: 100%;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: 500;
+  }
+}
+
+.contact--row {
+  @include w-h(100%, 4rem);
+  .contact--row::after {
+    @include reset(both, table);
+    content: "";
+
+  }
+}
+
+.contact--icon {
+  @include col(1rem,1rem, left);
+  margin: 1.5rem 0 1.5rem 1.5rem;
+
+}
+
+.contact--details, .contact--location {
+  @include col(auto, 20%, left);
+  font-size: 1rem;
+  line-height: 4rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.contact--location:hover {
+  color: $pri-color;
+  transition: .3s;
+  .contact--location:visited {
+    color: #fff;
+    transition: .3s
+  }
+}

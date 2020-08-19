@@ -5,6 +5,11 @@
 
 }
 
+@mixin w-h($w, $h) {
+  width: $w;
+  height: $h;
+}
+
 @mixin size($w, $h, $m) {
   width: $w;
   height: $h;
@@ -16,4 +21,9 @@
   height: $h;
   position: $p;
   z-index: $z;
+}
+
+@mixin reset($cl, $d) {
+  clear:$cl;
+  display: $d;
 }
