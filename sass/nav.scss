@@ -42,19 +42,21 @@
     display: inline-block;
     height: 120px;
     line-height: 120px;
+    color: #fff;
+    margin: 0 50px;
     a {
       text-decoration: none;
       color: #fff;
-      margin: 0 50px;
+
     }
   }
 }
 
-.nav--link a:hover{
+.nav--list--wrapper li:hover{
     transition: .6s;
     background-color: #fff;
     color: $pri-color;
-    padding: 49px 30px;
+    padding: 0px 30px;
     margin: 0 20px;
 }
 

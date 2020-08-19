@@ -20,15 +20,15 @@
 
             <div class="nav--wrapper">
                 <div class="logo--wrapper">
-                  <a href="index.html" class="home--img--link"><img src="img/logo.png" alt="company logo" class="logo--img"></a>
+                  <div class="home--img--link" id="home--page--button"><img src="img/logo.png" alt="company logo" class="logo--img"></div>
                 </div>
 
 
                 <ul class="nav--list--wrapper">
-                    <li class="nav--link"><a href="index.html">home</a></li>
+                    <li class="nav--link" id="home--page">home</li>
                     <li class="nav--link"><a href="menu.html">menu</a></li>
-                    <li class="nav--link"><a href="contact.html">contact</a></li>
-                    <li class="nav--link"><a href="booking.html">booking</a></li>
+                    <li class="nav--link" id="contact--page">contact</li>
+                    <li class="nav--link" id="booking--page">booking</li>
                 </ul>
 
 
@@ -41,16 +41,22 @@
             <!-- /////////////////////////////////////////////////////////////////////////////
             /////////////////////////////MAIN IMG AND CTA BEGINS//////////////////////////////-->
 
-            <div class="cta--wrapper">
+
+            <div class="home--page">
+
+                <div class="cta--wrapper">
 
 
-                <div class="home--img--wrapper">
-                  <img src="img/home--main.png" alt="food photo" class="home--img">
-                </div>
+                    <div class="home--img--wrapper">
+                      <img src="img/home--main.png" alt="food photo" class="home--img">
+                    </div>
 
 
-                <div class="cta--btn--wrapper">
-                    <a href="booking.html" class="cta--btn--link"><button class="cta--btn"> book now </button></a>
+                    <div class="cta--btn--wrapper">
+                        <button id="booking--page--button" class="cta--btn"> book now </button>
+                    </div>
+
+
                 </div>
 
 
@@ -58,16 +64,69 @@
 
 
             <!-- /////////////////////////////////////////////////////////////////////////////
-            ////////////////////////WELCOMING + DESCRIPTION BEGINS////////////////////////////-->
+            /////////////////////////////BOOKING PAGE////////////////////////////-->
 
 
-            <div class="welcoming--wrapper">
+
+            <div class="booking--page">
+                <div class="booking--wrapper">
 
 
-                <h1 class="welcome--header">Welcome to The Yum Yum House</h1>
-                <p class="welcome--msg">Welcome to the YumYum House! Your local Chinese dining experience of choice based in the heart of Tawa. Come in and experience our wide range of dishes in a pleasant, relaxing and family-friendly atmosphere or just drop in to pick up a delicious takeaway. Please feel free to call us and make a booking, or you can just turn up on the night. Want to bring the whole family or host a private function? We can cater for these as well.</p>
+                    <div class="booking--img--wrapper">
+                        <img src="img/booking--main.png" alt="venue--photo" class="booking--img">
+                    </div>
+
+
+                    <div class="booking--form--wrapper">
+                        <h1 class="booking--header">book now</h1>
+                        <form class="booking--form" action="booking.html" method="post">
+                            <input class="form--pri" type="text" name="username" placeholder="Full Name" >
+                            <input class="form--pri" type="text" name="email" placeholder="Email address">
+                            <input class="form--pri" type="text" name="phone" placeholder="Phone">
+                            <input class="form--sec" type="text" name="Time" placeholder="Time">
+                            <input class="form--sec" type="text" name="People" placeholder="# of People?">
+                            <input id="sub--button" class="submit" type="submit" name="Submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
 
             </div>
+
+
+            <!-- /////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////CONTACT PAGE////////////////////////////-->
+
+
+            <div class="contact--page">
+                <div class="contact--img--wrapper">
+                   <img src="img/contact--main.png" alt="venue--photo" class="contact--img">
+                </div>
+
+
+                <div class="contact--container">
+
+                    <h1 class="contact--header contact--row">Contact Us!</h1>
+
+                    <div class="contact--row">
+                        <img src="img/phone.png" alt="" class="contact--icon">
+                        <p class="contact--details">04-232-8188</p>
+                    </div>
+
+                    <div class="contact--row">
+                        <img src="img/mail.png" alt="" class="contact--icon">
+                        <p class="contact--details">yumyumhouse28@hotmail.com</p>
+                    </div>
+
+                    <div class="contact--row">
+                        <img src="img/pin.png" alt="" class="contact--icon">
+                         <a href="https://goo.gl/maps/7UwWAewM61VqgBAx9" class="contact--location">2 Oxford st, Tawa, Wellington</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
 
         </div>
 
