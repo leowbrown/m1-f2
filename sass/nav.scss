@@ -4,73 +4,123 @@
 // nav styling - wrapper /////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
+// .nav--wrapper {
+//   @include size(100%, 120px, auto);
+//   clear: both;
+//   display: table;
+//   content: "";
+//   background: #EB1B1B;
+// }
+//
+// // nav styling - logo /////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////////////////////
+//
+//
+// .logo--wrapper {
+//   @include col(25%, 120px, left);
+//   .home--img--link {
+//     .logo--img {
+//       @include size (auto, 100px, 15px);
+//     }
+//   }
+// }
+//
+// .logo--img:hover{
+//   opacity: 80%;
+// }
+//
+// // nav styling - pages /////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////////////////////
+//
+// .nav--list--wrapper {
+//   @include col(65%, 120px, left);
+//   text-transform: uppercase;
+//   font-weight: 500;
+//   text-align: right;
+//   font-size: 22px;
+//   .nav--link {
+//     display: inline-block;
+//     height: 120px;
+//     line-height: 120px;
+//     color: #fff;
+//     margin: 0 50px;
+//     a {
+//       text-decoration: none;
+//       color: #fff;
+//
+//     }
+//   }
+// }
+//
+// .nav--list--wrapper li:hover{
+//     transition: .6s;
+//     background-color: #fff;
+//     color: $pri-color;
+//     padding: 0px 30px;
+//     margin: 0 20px;
+//     cursor: pointer;
+// }
+//
+// // nav styling - cart /////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////
+//
+// .cart--wrapper {
+//   @include col(10%, 120px, right);
+//   .cart--link {
+//     .cart--img {
+//       @include size(35px, auto, 38px auto 25px 0);
+//       position: absolute;
+//       right: 50px;
+//     }
+//   }
+// }
+
+
 .nav--wrapper {
-  @include size(100%, 120px, auto);
-  clear: both;
-  display: table;
-  content: "";
-  background: #EB1B1B;
+  height: 10vh;
+  color: #fff;
+  background: $pri-color;
+
 }
 
-// nav styling - logo /////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-
-
-.logo--wrapper {
-  @include col(25%, 120px, left);
-  .home--img--link {
-    .logo--img {
-      @include size (auto, 100px, 15px);
-    }
-  }
-}
-
-.logo--img:hover{
-  opacity: 80%;
-}
-
-// nav styling - pages /////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-
-.nav--list--wrapper {
-  @include col(65%, 120px, left);
-  text-transform: uppercase;
-  font-weight: 500;
-  text-align: right;
-  font-size: 22px;
-  .nav--link {
-    display: inline-block;
-    height: 120px;
-    line-height: 120px;
-    color: #fff;
-    margin: 0 50px;
-    a {
-      text-decoration: none;
-      color: #fff;
-
-    }
-  }
-}
-
-.nav--list--wrapper li:hover{
-    transition: .6s;
-    background-color: #fff;
-    color: $pri-color;
-    padding: 0px 30px;
-    margin: 0 20px;
+.nav--list {
+  float: left;
+  list-style: none;
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo--img{
+    width: auto;
+    height: 6vh;
+    margin-top: 1vh;
     cursor: pointer;
+  }
 }
 
-// nav styling - cart /////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////
+.nav--link {
+  font-size: 2.5vh;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 5vh 0 10vh;
+  cursor: pointer;
+}
 
-.cart--wrapper {
-  @include col(10%, 120px, right);
-  .cart--link {
-    .cart--img {
-      @include size(35px, auto, 38px auto 25px 0);
-      position: absolute;
-      right: 50px;
-    }
-  }
+.nav--link:hover {
+  background-color: #fff;
+  color: $pri-color;
+  padding: 3.5vh;
+  margin: 0 1.5vh 0 6.5vh;
+  transition: .3s ease-in-out;
+}
+
+.logo--img:hover {
+  opacity: 80%;
+  transition: .1s ease-in-out;
+}
+
+.menu--btn{
+  display: none;
 }

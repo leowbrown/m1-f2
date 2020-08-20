@@ -1,0 +1,44 @@
+@import 'colors';
+
+@media screen and (max-width: 1150px){
+
+  .nav--wrapper {
+    height: 10vh;
+  }
+  @import 'burger';
+
+
+  .nav--list {
+    z-index: 1;
+    position: fixed;
+    background: $pri-color;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column-reverse;
+    clip-path: circle(0vh at 0 0);
+    -webkit-clip-path: circle (0 at 0 0);
+    transition: all 1s ease-in-out;
+  }
+
+  .nav--list.active {
+    clip-path: circle(250vh at 0 0);
+    -webkit-clip-path: circle (250vh at 0 0);
+  }
+
+  .nav--link:hover {
+    margin: 0;
+    background-color: $pri-color;
+    color: #fff;
+    padding: 0;
+  }
+
+  .logo--img {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+
+
+}
