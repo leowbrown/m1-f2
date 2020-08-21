@@ -1,17 +1,18 @@
+const navLinks = document.querySelector('.nav--list');
 const menuBtn = document.querySelector('#menu--btn');
 menuBtn.addEventListener('click', () => {
     navLinks.classList.toggle("active");
 });
 
 
-const navLinks = document.querySelector('.nav--list');
+
 
 console.log('js');
 
 $('.booking--page').hide();
 $('.contact--page').hide();
-$('.menu--page').hide();
-// $('.home--page').hide();
+// $('.menu--page').hide();
+$('.home--page').hide();
 
 $(document).ready(function(){
 

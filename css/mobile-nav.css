@@ -1,26 +1,24 @@
 /*
-Error: Undefined mixin 'flex-b'.
-        on line 4 of C:\Users\Leo\Desktop\m1-f2\sass\burger.scss, in `flex-b'
-        from line 4 of C:\Users\Leo\Desktop\m1-f2\sass\burger.scss
+Error: Undefined variable: "$pri-color".
+        on line 12 of C:\Users\Leo\Desktop\m1-f2\sass\mobile-nav.scss
 
-1: @import 'colors';
-2: 
-3: #menu--btn{
-4:   @include flex-b(flex, column, center, center);
-5:   @include img(10vh, 10vh, relative, 2);
-6:   cursor: pointer;
-7:   transition: all .5s ease-in-out;
-8:   .menu--burger {
-9:     @include w-h(37.5px, 4px);
+7: 
+8: .nav--list {
+9:   @include img(100%, 100vh, absolute, 2);
+10:   top: 0;
+11:   left: 0;
+12:   background: $pri-color;
+13:   @include flex-b(flex, column, flex-start, center);
+14:   clip-path: circle(0vh at 0 0);
+15:   -webkit-clip-path: circle (0 at 0 0);
+16:   transition: all 1s ease-in-out;
+17:   margin-top: 8vh;
 
 Backtrace:
-C:\Users\Leo\Desktop\m1-f2\sass\burger.scss:4:in `flex-b'
-C:\Users\Leo\Desktop\m1-f2\sass\burger.scss:4
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:\Users\Leo\Desktop\m1-f2\sass\mobile-nav.scss:12
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -63,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex-b'.\A         on line 4 of C:\Users\Leo\Desktop\m1-f2\sass\burger.scss, in `flex-b'\A         from line 4 of C:\Users\Leo\Desktop\m1-f2\sass\burger.scss\A \A 1: @import 'colors';\A 2: \A 3: #menu--btn{\A 4:   @include flex-b(flex, column, center, center);\A 5:   @include img(10vh, 10vh, relative, 2);\A 6:   cursor: pointer;\A 7:   transition: all .5s ease-in-out;\A 8:   .menu--burger {\A 9:     @include w-h(37.5px, 4px);"; }
+  content: "Error: Undefined variable: \"$pri-color\".\A         on line 12 of C:\Users\Leo\Desktop\m1-f2\sass\mobile-nav.scss\A \A 7: \A 8: .nav--list {\A 9:   @include img(100%, 100vh, absolute, 2);\A 10:   top: 0;\A 11:   left: 0;\A 12:   background: $pri-color;\A 13:   @include flex-b(flex, column, flex-start, center);\A 14:   clip-path: circle(0vh at 0 0);\A 15:   -webkit-clip-path: circle (0 at 0 0);\A 16:   transition: all 1s ease-in-out;\A 17:   margin-top: 8vh;"; }

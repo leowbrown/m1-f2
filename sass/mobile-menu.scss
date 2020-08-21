@@ -1,0 +1,136 @@
+@import 'mixin';
+
+.menu--page {
+  @include w-h(90%, 90vh);
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin: 2.5% 0 2.5% 10%;
+
+}
+
+.list {
+  text-transform: capitalize;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  letter-spacing: .3px;
+}
+
+.list--container {
+  list-style: none;
+  // margin: 2%;
+}
+
+.list--header {
+  color: $pri-color;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .7px;
+  margin-bottom: .3rem;
+}
+
+@media screen and (max-width: 750px) {
+
+  .menu--page {
+    @include w-h(90%, 190vh);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    margin: 10% 0 2.5% 5%;
+
+  }
+
+  .list {
+    text-transform: capitalize;
+    font-size: .8rem;
+    line-height: 1.6rem;
+    letter-spacing: .3px;
+  }
+
+  .list--container {
+    list-style: none;
+    // margin: 2%;
+  }
+
+  .list--header {
+    color: $pri-color;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: .7px;
+    margin-bottom: .3rem;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+
+  .menu--page {
+    @include w-h(90%, 170vh);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    margin: 10% 0 2.5% 5%;
+    grid-column-gap: 4%;
+  }
+
+  .list {
+    text-transform: capitalize;
+    font-size: .75rem;
+    line-height: 1.6rem;
+    letter-spacing: .5px;
+  }
+
+  .list--container {
+    list-style: none;
+    margin-left: 2%;
+    // margin: 2%;
+  }
+
+  .list--header {
+    color: $pri-color;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .7px;
+    margin-bottom: .3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .menu--page {
+    @include w-h(100%, 410vh);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 8% 8% 7% 8% 8% 8% 7% 9% 9% 9% 9%;
+    margin: 10% 0 2.5% 30%;
+  }
+
+  .list {
+    text-transform: capitalize;
+    font-size: .75rem;
+    line-height: 1.6rem;
+    letter-spacing: .5px;
+  }
+
+  .list--container {
+    list-style: none;
+
+  }
+
+  .list--header {
+    color: $pri-color;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .7px;
+    margin-bottom: .3rem;
+  }
+
+  .nonal{
+    margin-bottom: 30px;
+  }
+
+}

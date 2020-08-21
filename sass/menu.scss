@@ -1,39 +1,31 @@
 @import 'mixin';
 
-
-
 .menu--page {
-  @include w-h(85%, auto);
-  margin:1rem 0 0 12.5%;
+  @include w-h(90%, 115vh);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33% 33% 33%;
+  margin: 2.5% 0 2.5% 10%;
 
-
-  .menu--row {
-    @include w-h(100%, 33%);
-    list-style: none;
-    .list--container {
-      @include col(20%, 100%, left);
-      margin: 20px;
-      list-style: none;
-      .list--header {
-        color: $pri-color;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        margin-bottom: .1rem;
-      }
-    }
-  }
 }
 
 .list {
   text-transform: capitalize;
-  font-size: .8rem;
-  line-height: 1.6rem;
+  font-size: 1rem;
+  line-height: 1.9rem;
   letter-spacing: .5px;
 }
 
-.menu--row::after{
-  @include reset(both, table);
-  content: "";
+.list--container {
+  list-style: none;
+  // margin: 2%;
+}
+
+.list--header {
+  color: $pri-color;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
 }
