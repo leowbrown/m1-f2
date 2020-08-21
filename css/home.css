@@ -1,0 +1,41 @@
+.home--img--wrapper .home--img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  position: absolute;
+  bottom: 0px; }
+
+.cta--btn {
+  padding: 10px 30px;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px; }
+
+.cta--btn:hover {
+  color: #fff;
+  border: 2px solid #EB1B1B;
+  background: #EB1B1B;
+  transition: .6s;
+  cursor: pointer; }
+
+.cta--btn:active {
+  color: #fff;
+  border: 2px solid #EB1B1B;
+  background: #EB1B1B;
+  transition: .6s; }
+
+.welcoming--wrapper {
+  background-color: #fff;
+  position: absolute;
+  bottom: -300px; }

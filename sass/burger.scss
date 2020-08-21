@@ -1,39 +1,28 @@
 @import 'colors';
 
-.menu--btn{
-  // margin: .5vh 10px 0 auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10vh;
-  height: 10vh;
+#menu--btn{
+  @include flex-b(flex, column, center, center);
+  @include img(10vh, 10vh, relative, 2);
   cursor: pointer;
   transition: all .5s ease-in-out;
-  z-index: 2;
-  
-
+  .menu--burger {
+    @include w-h(37.5px, 4px);
+    background: #fff;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+  }
 }
 
-.menu--burger {
-  width: 37.5px;
-  height: 4px;
-  background: #fff;
-  border-radius: 3px;
-  transition: all .5s ease-in-out;
-  z-index: 2;
-}
+
 
 .menu--burger::before,
 .menu--burger::after {
   content: '';
-  position: absolute;
-  width: 37.5px;
-  height: 4px;
+  @include img(37.5px, 4px, absolute, 2);
   background: #fff;
   border-radius: 3px;
   transition: all .5s ease-in-out;
-  z-index: 2;
 }
 .menu--burger::before {
   transform: translateY(-12px);
@@ -43,14 +32,14 @@
   transform: translateY(12px);
 }
 
-.menu--btn.open .menu--burger{
+#menu--btn.open .menu--burger{
   background: transparent;
 }
 
-.menu--btn.open .menu--burger::before {
+#menu--btn.open .menu--burger::before {
   transform: rotate(45deg);
 }
 
-.menu--btn.open .menu--burger::after {
+#menu--btn.open .menu--burger::after {
   transform: rotate(-45deg);
 }

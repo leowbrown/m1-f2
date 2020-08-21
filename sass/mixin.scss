@@ -27,3 +27,24 @@
   clear:$cl;
   display: $d;
 }
+
+@mixin pos($p, $t, $l, $tt, $ttt) {
+  position: $p;
+  top: $t;
+  left: $l;
+  transform: translate($tt, $ttt);
+}
+
+@mixin f-sizing($fs, $ta, $lh, $fw) {
+  font-size: $fs;
+  text-align: $ta;
+  line-height: $lh;
+  font-weight: $fw;
+}
+
+@mixin flex-b($d, $fd, $jc, $ai){
+  display: $d;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}

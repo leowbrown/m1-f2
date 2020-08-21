@@ -1,0 +1,34 @@
+@import 'mixin';
+
+.logo--img {
+  position: absolute;
+  right: 2vh;
+}
+
+.nav--list {
+  @include img(100%, 100vh, absolute, 2);
+  top: 0;
+  left: 0;
+  background: $pri-color;
+  @include flex-b(flex, column, flex-start, center);
+  clip-path: circle(0vh at 0 0);
+  -webkit-clip-path: circle (0 at 0 0);
+  transition: all 1s ease-in-out;
+  margin-top: 8vh;
+  .nav--link{
+    padding: 5% 0;
+    margin: 0;
+  }
+}
+
+.nav--list.active {
+  clip-path: circle(250vh at 0 0);
+  -webkit-clip-path: circle (250vh at 0 0);
+}
+
+.nav--link:hover {
+  margin: 0;
+  background-color: $pri-color;
+  color: #fff;
+  padding: 5% 0;
+}

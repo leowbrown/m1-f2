@@ -5,7 +5,6 @@
 .contact--img--wrapper {
   .contact--img {
     @include img(100%, auto, absolute, -1 );
-    position: absolute;
     bottom: 0px;
   }
 }
@@ -14,19 +13,12 @@
   @include w-h(30%, 18rem);
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
-  font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include pos(absolute, 55%, 50%, -50%, -50%);
   .contact--header {
     width: 100%;
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 5rem;
-    font-weight: 300;
+    @include f-sizing(1.8rem, center, 5rem, 300);
     margin-top: 1rem;
   }
 }
@@ -42,14 +34,13 @@
 
 .contact--icon {
   @include col(1rem,1rem, left);
-  margin: 1.5rem 0 1.5rem 1.5rem;
+  margin: 1.5rem 0 1rem 1rem;
 
 }
 
 .contact--details, .contact--location {
   @include col(auto, 20%, left);
-  font-size: 1rem;
-  line-height: 4rem;
+  @include f-sizing(1rem, left, 4rem, 300);
   margin-left: 1rem;
   text-decoration: none;
   color: #fff;
