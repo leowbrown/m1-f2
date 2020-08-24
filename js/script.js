@@ -9,9 +9,9 @@ menuBtn.addEventListener('click', () => {
 
 console.log('js');
 
-$('.booking--page').hide();
+// $('.booking--page').hide();
 $('.contact--page').hide();
-// $('.menu--page').hide();
+$('.menu--page').hide();
 $('.home--page').hide();
 
 $(document).ready(function(){
@@ -59,9 +59,7 @@ $(document).ready(function(){
     $('.home--page').show();
     $('.contact--page').hide();
     $('.menu--page').hide();
-    $('.nav--list').toggleClass("active");
-    $('#menu--btn').toggleClass("open");
-  });
+    });
 
   $('#menu--page').click(function() {
     $('.booking--page').hide();

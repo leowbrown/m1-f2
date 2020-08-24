@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$pri-color".
-        on line 9 of C:\Users\Leo\Desktop\m1-f2\sass\mobile-nav.scss
+        on line 25 of C:\Users\Leo\Desktop\m1-f2\sass\mobile-menu.scss
 
-4:   position: absolute;
-5:   right: 2vh;
-6: }
-7: 
-8: .nav--list--wrapper{
-9:   background-color: $pri-color;
-10: }
-11: 
-12: .nav--list {
-13:   @include img(100%, 100vh, absolute, 2);
-14:   top: 0;
+20:   list-style: none;
+21:   // margin: 2%;
+22: }
+23: 
+24: .list--header {
+25:   color: $pri-color;
+26:   text-transform: uppercase;
+27:   font-size: 1.4rem;
+28:   font-weight: 400;
+29:   letter-spacing: .7px;
+30:   margin-bottom: .3rem;
 
 Backtrace:
-C:\Users\Leo\Desktop\m1-f2\sass\mobile-nav.scss:9
+C:\Users\Leo\Desktop\m1-f2\sass\mobile-menu.scss:25
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$pri-color\".\A         on line 9 of C:\Users\Leo\Desktop\m1-f2\sass\mobile-nav.scss\A \A 4:   position: absolute;\A 5:   right: 2vh;\A 6: }\A 7: \A 8: .nav--list--wrapper{\A 9:   background-color: $pri-color;\A 10: }\A 11: \A 12: .nav--list {\A 13:   @include img(100%, 100vh, absolute, 2);\A 14:   top: 0;"; }
+  content: "Error: Undefined variable: \"$pri-color\".\A         on line 25 of C:\Users\Leo\Desktop\m1-f2\sass\mobile-menu.scss\A \A 20:   list-style: none;\A 21:   // margin: 2%;\A 22: }\A 23: \A 24: .list--header {\A 25:   color: $pri-color;\A 26:   text-transform: uppercase;\A 27:   font-size: 1.4rem;\A 28:   font-weight: 400;\A 29:   letter-spacing: .7px;\A 30:   margin-bottom: .3rem;"; }

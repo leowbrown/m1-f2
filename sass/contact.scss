@@ -4,8 +4,9 @@
 
 .contact--img--wrapper {
   .contact--img {
-    @include img(100%, auto, absolute, -1 );
+    @include img(100%, 100%, absolute, -1 );
     bottom: 0px;
+    object-fit: cover;
   }
 }
 

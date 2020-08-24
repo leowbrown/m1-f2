@@ -1,0 +1,38 @@
+@import 'mixin';
+
+@media screen and (max-width: 1100px) {
+  .cta--btn {
+    font-size: 90px;
+    width: 58%;
+  }
+  .home--img{
+    display: none;
+  }
+  .home--img--mobile{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+  .cta--btn {
+    font-size: 55px;
+    width: 45%;
+  }
+
+
+
+
+
+}
+
+@media screen and (max-width: 550px) {
+  .cta--btn {
+    font-size: 30px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+}

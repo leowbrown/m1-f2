@@ -1,14 +1,16 @@
 @import 'mixin';
 @import 'colors';
 
+
 // home page styling - home image ////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
 .home--img--wrapper {
   .home--img {
-    @include img(100%, auto, absolute, -1 );
+    @include img(100%, 100%, absolute, -1 );
     position: absolute;
     bottom: 0px;
+    object-fit: cover;
   }
 }
 
@@ -47,16 +49,10 @@
   transition: .6s;
 }
 
-// home page styling - about-welcome message//////////////////////////
-//////////////////////////////////////////////////////////////////////
-
-.welcoming--wrapper {
-  background-color: #fff;
+.home--img--mobile{
+  display: none;
+  @include img(100%, 100%, absolute, -1 );
   position: absolute;
-  bottom: -300px;
-  .welcome--header {
-    .welcome--msg {
-
-    }
-  }
+  bottom: 0px;
+  object-fit: cover;
 }

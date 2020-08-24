@@ -5,6 +5,10 @@
   right: 2vh;
 }
 
+.nav--list--wrapper{
+  background-color: $pri-color;
+}
+
 .nav--list {
   @include img(100%, 100vh, absolute, 2);
   top: 0;

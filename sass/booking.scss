@@ -3,78 +3,58 @@
 
 * {
   border: none;
+  box-sizing: border-box;
 }
 
 .booking--img--wrapper {
   .booking--img {
-    @include img(100%, auto, absolute, -1 );
+    @include img(100%, 100%, absolute, -1 );
     position: absolute;
     bottom: 0px;
+    object-fit: cover;
   }
 }
 
 .booking--form--wrapper {
-  position: absolute;
-  width: 30%;
-  height: auto;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2%;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 4px;
-
-
+  @include w-h(40%, 31vh);
+  @include pos(absolute, 50%, 50%, -50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0 40px;
+  text-align:center;
 }
 
-  .booking--header {
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    color: #fff;
-    text-align: center;
-    @include col(100%, auto, left);
+.booking--form {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-gap: 15px;
 }
+
 .form--pri {
-  width:97%;
-  margin: 1%;
-  padding: 1%;
-  float: left;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  border-radius: 3px;
+  grid-column: 1/4;
 }
 
-.form--sec {
-  width: 31%;
-  padding:1%;
-  margin: 1%;
-  float: left;
-  color: #fff;
+.booking--form input{
+  font-size: 1rem;
+  padding: .2rem .8rem;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 3px;
-
+  color: #fff;
+  outline: none;
+  font-weight: 400;
 }
 
-.submit {
-  width: 31%;
-  padding:1%;
-  margin: 1%;
-  float: left;
-  border: none;
+.form--sec:last-child:hover{
+  background-color: $pri-color;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.booking--header{
   text-transform: uppercase;
   color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid whitesmoke;
-  border-radius: 3px;
-
-}
-
-.submit:hover {
-  transition: .1s;
-  border: 1px solid $pri-color;
-  background: $pri-color;
-  border-radius: 3px;
-  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 10px;
 }

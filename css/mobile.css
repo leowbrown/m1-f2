@@ -10,8 +10,8 @@ Error: Undefined mixin 'flex-b'.
 4: 
 5:   @import 'burger';
 6:   @import 'mobile-nav';
-7: 
-8: 
+7:   @import 'mobile-menu';
+8:   @import 'mobile-home';
 9: }
 
 Backtrace:
@@ -92,4 +92,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex-b'.\A         on line 4 of C:/Users/Leo/Desktop/m1-f2/sass/burger.scss, in `flex-b'\A         from line 4 of C:/Users/Leo/Desktop/m1-f2/sass/burger.scss\A         from line 5 of C:\Users\Leo\Desktop\m1-f2\sass\mobile.scss\A \A 1: @import 'colors';\A 2: \A 3: @media screen and (max-width: 1250px){\A 4: \A 5:   @import 'burger';\A 6:   @import 'mobile-nav';\A 7: \A 8: \A 9: }"; }
+  content: "Error: Undefined mixin 'flex-b'.\A         on line 4 of C:/Users/Leo/Desktop/m1-f2/sass/burger.scss, in `flex-b'\A         from line 4 of C:/Users/Leo/Desktop/m1-f2/sass/burger.scss\A         from line 5 of C:\Users\Leo\Desktop\m1-f2\sass\mobile.scss\A \A 1: @import 'colors';\A 2: \A 3: @media screen and (max-width: 1250px){\A 4: \A 5:   @import 'burger';\A 6:   @import 'mobile-nav';\A 7:   @import 'mobile-menu';\A 8:   @import 'mobile-home';\A 9: }"; }

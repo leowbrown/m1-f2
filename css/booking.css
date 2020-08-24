@@ -3,11 +3,12 @@
 
 .booking--img--wrapper .booking--img {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: absolute;
   z-index: -1;
   position: absolute;
-  bottom: 0px; }
+  bottom: 0px;
+  object-fit: cover; }
 
 .booking--form--wrapper {
   position: absolute;
