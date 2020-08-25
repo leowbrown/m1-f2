@@ -10,7 +10,7 @@
 }
 
 .nav--list {
-  @include img(100%, 100vh, absolute, 2);
+  @include img(100%, 150vh, absolute, 2);
   top: 0;
   left: 0;
   background: $pri-color;
@@ -26,8 +26,8 @@
 }
 
 .nav--list.active {
-  clip-path: circle(250vh at 0 0);
-  -webkit-clip-path: circle (250vh at 0 0);
+  clip-path: circle(350vh at 0 0);
+  -webkit-clip-path: circle (350vh at 0 0);
 }
 
 .nav--link:hover {

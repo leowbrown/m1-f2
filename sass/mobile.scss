@@ -1,9 +1,13 @@
 @import 'colors';
 
-@media screen and (max-width: 1250px){
+
+
+
+@media screen and (max-width: 1500px){
 
   @import 'burger';
   @import 'mobile-nav';
   @import 'mobile-menu';
   @import 'mobile-home';
+  @import 'mobile-menu';
 }
