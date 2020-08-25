@@ -18,8 +18,8 @@
 .booking--form--wrapper {
   @include w-h(40%, 31vh);
   @include pos(absolute, 50%, 50%, -50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  padding: 0 40px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
   text-align:center;
 }
 
@@ -38,9 +38,10 @@
 
 .booking--form input{
   font-size: 1rem;
-  padding: .2rem .8rem;
-  background: rgba(0, 0, 0, 0.6);
+  padding: .5rem;
+  background: rgba(0, 0, 0, 0.2);
   color: #fff;
+  border: 1px solid rgba(255,255,255, 0.2);
   outline: none;
   font-weight: 400;
 }
@@ -49,6 +50,7 @@
   background-color: $pri-color;
   transition: .3s;
   cursor: pointer;
+  border: 1px solid $pri-color;
 }
 
 .booking--header{

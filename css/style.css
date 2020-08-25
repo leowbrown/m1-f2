@@ -66,8 +66,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  padding: 0 40px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
   text-align: center; }
 
 .booking--form {
@@ -83,16 +83,18 @@
 
 .booking--form input {
   font-size: 1rem;
-  padding: .2rem .8rem;
-  background: rgba(0, 0, 0, 0.6);
+  padding: .5rem;
+  background: rgba(0, 0, 0, 0.2);
   color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   outline: none;
   font-weight: 400; }
 
 .form--sec:last-child:hover {
   background-color: #EB1B1B;
   transition: .3s;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 1px solid #EB1B1B; }
 
 .booking--header {
   text-transform: uppercase;
@@ -251,11 +253,11 @@
 
 .menu--page {
   width: 90%;
-  height: 115vh;
+  height: 78vh;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 33% 33% 33%;
-  margin: 2.5% 0 2.5% 10%; }
+  margin: 4% 0 2.5% 5%; }
 
 .list {
   text-transform: capitalize;
@@ -273,6 +275,22 @@
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: .5rem; }
+
+.menu--img--container {
+  width: 100%;
+  height: 80vh;
+  grid-column: 5/6;
+  grid-row: 1/4; }
+
+.menu--side {
+  object-fit: cover;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: 0; }
 
 @media screen and (max-width: 1250px) {
   #menu--btn {
@@ -355,8 +373,33 @@
     margin: 0;
     background-color: #EB1B1B;
     color: #fff;
-    padding: 5% 0; }
+    padding: 5% 0; } }
+@media screen and (max-width: 1250px) and (max-width: 1500px) {
+  .menu--page {
+    width: 90%;
+    height: 115vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    margin: 2.5% 0 2.5% 10%; }
 
+  .list {
+    text-transform: capitalize;
+    font-size: 2rem;
+    line-height: 1.9rem;
+    letter-spacing: .5px; }
+
+  .list--container {
+    list-style: none; }
+
+  .list--header {
+    color: #EB1B1B;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: .5rem; } }
+@media screen and (max-width: 1250px) {
   .menu--page {
     width: 90%;
     height: 90vh;

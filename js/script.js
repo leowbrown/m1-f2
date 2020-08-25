@@ -9,9 +9,9 @@ menuBtn.addEventListener('click', () => {
 
 console.log('js');
 
-// $('.booking--page').hide();
+$('.booking--page').hide();
 $('.contact--page').hide();
-$('.menu--page').hide();
+// $('.menu--page').hide();
 $('.home--page').hide();
 
 $(document).ready(function(){

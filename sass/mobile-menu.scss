@@ -1,5 +1,41 @@
 @import 'mixin';
 
+
+@media screen and (max-width: 1500px) {
+
+  .menu--page {
+    @include w-h(90%, 115vh);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    margin: 2.5% 0 2.5% 10%;
+
+  }
+
+  .list {
+    text-transform: capitalize;
+    font-size: 2rem;
+    line-height: 1.9rem;
+    letter-spacing: .5px;
+  }
+
+  .list--container {
+    list-style: none;
+    // margin: 2%;
+  }
+
+  .list--header {
+    color: $pri-color;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+  }
+
+}
+
+
 .menu--page {
   @include w-h(90%, 90vh);
   display: grid;
