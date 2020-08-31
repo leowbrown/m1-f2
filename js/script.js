@@ -11,8 +11,8 @@ console.log('js');
 
 $('.booking--page').hide();
 $('.contact--page').hide();
-// $('.menu--page').hide();
-$('.home--page').hide();
+$('.menu--page').hide();
+// $('.home--page').hide();
 
 $(document).ready(function(){
 
